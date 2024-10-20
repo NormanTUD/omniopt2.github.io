@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Coverage for .omniopt.py: 75%</title>
+    <title>Coverage for .omniopt.py: 74%</title>
     <link rel="icon" sizes="32x32" href="favicon_32_cb_58284776.png">
     <link rel="stylesheet" href="style_cb_8e611ae1.css" type="text/css">
     <script src="coverage_html_cb_6fb7b396.js" defer></script>
@@ -12,7 +12,7 @@
     <div class="content">
         <h1>
             <span class="text">Coverage for </span><b>.omniopt.py</b>:
-            <span class="pc_cov">75%</span>
+            <span class="pc_cov">74%</span>
         </h1>
         <aside id="help_panel_wrapper">
             <input id="help_panel_state" type="checkbox">
@@ -54,9 +54,9 @@
             </div>
         </aside>
         <h2>
-            <span class="text">3363 statements &nbsp;</span>
-            <button type="button" class="run button_toggle_run" value="run" data-shortcut="r" title="Toggle lines run">2507<span class="text"> run</span></button>
-            <button type="button" class="mis show_mis button_toggle_mis" value="mis" data-shortcut="m" title="Toggle lines missing">856<span class="text"> missing</span></button>
+            <span class="text">3364 statements &nbsp;</span>
+            <button type="button" class="run button_toggle_run" value="run" data-shortcut="r" title="Toggle lines run">2501<span class="text"> run</span></button>
+            <button type="button" class="mis show_mis button_toggle_mis" value="mis" data-shortcut="m" title="Toggle lines missing">863<span class="text"> missing</span></button>
             <button type="button" class="exc show_exc button_toggle_exc" value="exc" data-shortcut="x" title="Toggle lines excluded">0<span class="text"> excluded</span></button>
         </h2>
         <p class="text">
@@ -64,8 +64,8 @@
             <a id="indexLink" class="nav" href="index.html">&Hat; index</a> &nbsp; &nbsp;
             <a id="nextFileLink" class="nav" href="_omniopt_plot_cpu_ram_usage_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
-            <a class="nav" href="https://coverage.readthedocs.io/en/7.6.1">coverage.py v7.6.1</a>,
-            created at 2024-10-20 17:11 +0000
+            <a class="nav" href="https://coverage.readthedocs.io/en/7.6.3">coverage.py v7.6.3</a>,
+            created at 2024-10-20 17:16 +0000
         </p>
         <aside class="hidden">
             <button type="button" class="button_next_chunk" data-shortcut="j"></button>
@@ -3322,7 +3322,7 @@
     <p class="pln"><span class="n"><a id="t3240" href="#t3240">3240</a></span><span class="t">                <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t3241" href="#t3241">3241</a></span><span class="t">                    <span class="com"># Ensure consistent types for comparison</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3242" href="#t3242">3242</a></span><span class="t">                    <span class="key">if</span> <span class="nam">matching_rows</span><span class="op">[</span><span class="nam">param</span><span class="op">]</span><span class="op">.</span><span class="nam">dtype</span> <span class="op">==</span> <span class="nam">np</span><span class="op">.</span><span class="nam">int64</span> <span class="key">and</span> <span class="nam">isinstance</span><span class="op">(</span><span class="nam">value</span><span class="op">,</span> <span class="nam">str</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run"><span class="n"><a id="t3243" href="#t3243">3243</a></span><span class="t">                        <span class="nam">value</span> <span class="op">=</span> <span class="nam">int</span><span class="op">(</span><span class="nam">value</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis"><span class="n"><a id="t3243" href="#t3243">3243</a></span><span class="t">                        <span class="nam">value</span> <span class="op">=</span> <span class="nam">int</span><span class="op">(</span><span class="nam">value</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3244" href="#t3244">3244</a></span><span class="t">                    <span class="key">elif</span> <span class="nam">matching_rows</span><span class="op">[</span><span class="nam">param</span><span class="op">]</span><span class="op">.</span><span class="nam">dtype</span> <span class="op">==</span> <span class="nam">np</span><span class="op">.</span><span class="nam">float64</span> <span class="key">and</span> <span class="nam">isinstance</span><span class="op">(</span><span class="nam">value</span><span class="op">,</span> <span class="nam">str</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t3245" href="#t3245">3245</a></span><span class="t">                        <span class="nam">value</span> <span class="op">=</span> <span class="nam">float</span><span class="op">(</span><span class="nam">value</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t3246" href="#t3246">3246</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -3639,7 +3639,7 @@
     <p class="mis show_mis"><span class="n"><a id="t3557" href="#t3557">3557</a></span><span class="t">        <span class="nam">errors</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">"First line does not seem to be a shebang line: "</span> <span class="op">+</span> <span class="nam">first_line</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t3558" href="#t3558">3558</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3559" href="#t3559">3559</a></span><span class="t">    <span class="key">if</span> <span class="str">"Permission denied"</span> <span class="key">in</span> <span class="nam">file_as_string</span> <span class="key">and</span> <span class="str">"/bin/sh"</span> <span class="key">in</span> <span class="nam">file_as_string</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run"><span class="n"><a id="t3560" href="#t3560">3560</a></span><span class="t">        <span class="nam">errors</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">"Log file contains 'Permission denied'. Did you try to run the script without chmod +x?"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis"><span class="n"><a id="t3560" href="#t3560">3560</a></span><span class="t">        <span class="nam">errors</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">"Log file contains 'Permission denied'. Did you try to run the script without chmod +x?"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t3561" href="#t3561">3561</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3562" href="#t3562">3562</a></span><span class="t">    <span class="key">if</span> <span class="str">"Exec format error"</span> <span class="key">in</span> <span class="nam">file_as_string</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3563" href="#t3563">3563</a></span><span class="t">        <span class="nam">current_platform</span> <span class="op">=</span> <span class="nam">platform</span><span class="op">.</span><span class="nam">machine</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -3653,7 +3653,7 @@
     <p class="run"><span class="n"><a id="t3571" href="#t3571">3571</a></span><span class="t">        <span class="nam">errors</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">f"Was the program compiled for the wrong platform? Current system is {current_platform}{file_output}"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t3572" href="#t3572">3572</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3573" href="#t3573">3573</a></span><span class="t">    <span class="key">if</span> <span class="str">"/bin/sh"</span> <span class="key">in</span> <span class="nam">file_as_string</span> <span class="key">and</span> <span class="str">"not found"</span> <span class="key">in</span> <span class="nam">file_as_string</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run"><span class="n"><a id="t3574" href="#t3574">3574</a></span><span class="t">        <span class="nam">errors</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">"Wrong path? File not found"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis"><span class="n"><a id="t3574" href="#t3574">3574</a></span><span class="t">        <span class="nam">errors</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">"Wrong path? File not found"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t3575" href="#t3575">3575</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3576" href="#t3576">3576</a></span><span class="t">    <span class="key">if</span> <span class="nam">len</span><span class="op">(</span><span class="nam">file_paths</span><span class="op">)</span> <span class="key">and</span> <span class="nam">os</span><span class="op">.</span><span class="nam">stat</span><span class="op">(</span><span class="nam">file_paths</span><span class="op">[</span><span class="num">0</span><span class="op">]</span><span class="op">)</span><span class="op">.</span><span class="nam">st_size</span> <span class="op">==</span> <span class="num">0</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t3577" href="#t3577">3577</a></span><span class="t">        <span class="nam">errors</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">f"File in {program_code} is empty"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -3733,7 +3733,7 @@
     <p class="run"><span class="n"><a id="t3651" href="#t3651">3651</a></span><span class="t">        <span class="key">if</span> <span class="nam">search_for_exit_code</span> <span class="key">in</span> <span class="nam">file_as_string</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3652" href="#t3652">3652</a></span><span class="t">            <span class="nam">_error</span> <span class="op">=</span> <span class="str">"Non-zero exit-code detected: "</span> <span class="op">+</span> <span class="nam">str</span><span class="op">(</span><span class="nam">r</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3653" href="#t3653">3653</a></span><span class="t">            <span class="key">if</span> <span class="nam">str</span><span class="op">(</span><span class="nam">r</span><span class="op">)</span> <span class="key">in</span> <span class="nam">special_exit_codes</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run"><span class="n"><a id="t3654" href="#t3654">3654</a></span><span class="t">                <span class="nam">_error</span> <span class="op">+=</span> <span class="str">" (May mean "</span> <span class="op">+</span> <span class="nam">special_exit_codes</span><span class="op">[</span><span class="nam">str</span><span class="op">(</span><span class="nam">r</span><span class="op">)</span><span class="op">]</span> <span class="op">+</span> <span class="str">", unless you used that exit code yourself or it was part of any of your used libraries or programs)"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis"><span class="n"><a id="t3654" href="#t3654">3654</a></span><span class="t">                <span class="nam">_error</span> <span class="op">+=</span> <span class="str">" (May mean "</span> <span class="op">+</span> <span class="nam">special_exit_codes</span><span class="op">[</span><span class="nam">str</span><span class="op">(</span><span class="nam">r</span><span class="op">)</span><span class="op">]</span> <span class="op">+</span> <span class="str">", unless you used that exit code yourself or it was part of any of your used libraries or programs)"</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3655" href="#t3655">3655</a></span><span class="t">            <span class="nam">errors</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="nam">_error</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3656" href="#t3656">3656</a></span><span class="t">    <span class="key">return</span> <span class="nam">errors</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t3657" href="#t3657">3657</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -3828,7 +3828,7 @@
     <p class="pln"><span class="n"><a id="t3746" href="#t3746">3746</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3747" href="#t3747">3747</a></span><span class="t">        <span class="nam">new_errors</span> <span class="op">=</span> <span class="nam">check_for_basic_string_errors</span><span class="op">(</span><span class="nam">file_as_string</span><span class="op">,</span> <span class="nam">first_line</span><span class="op">,</span> <span class="nam">file_paths</span><span class="op">,</span> <span class="nam">program_code</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3748" href="#t3748">3748</a></span><span class="t">        <span class="key">for</span> <span class="nam">n</span> <span class="key">in</span> <span class="nam">new_errors</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run"><span class="n"><a id="t3749" href="#t3749">3749</a></span><span class="t">            <span class="nam">errors</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="nam">n</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis"><span class="n"><a id="t3749" href="#t3749">3749</a></span><span class="t">            <span class="nam">errors</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="nam">n</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t3750" href="#t3750">3750</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3751" href="#t3751">3751</a></span><span class="t">        <span class="nam">new_errors</span> <span class="op">=</span> <span class="nam">check_for_base_errors</span><span class="op">(</span><span class="nam">file_as_string</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3752" href="#t3752">3752</a></span><span class="t">        <span class="key">for</span> <span class="nam">n</span> <span class="key">in</span> <span class="nam">new_errors</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -4520,7 +4520,7 @@
     <p class="run"><span class="n"><a id="t4438" href="#t4438">4438</a></span><span class="t">        <span class="key">if</span> <span class="nam">model_upper</span> <span class="key">in</span> <span class="nam">available_models</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t4439" href="#t4439">4439</a></span><span class="t">            <span class="nam">chosen_model</span> <span class="op">=</span> <span class="nam">Models</span><span class="op">.</span><span class="nam">__members__</span><span class="op">[</span><span class="nam">model_upper</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t4440" href="#t4440">4440</a></span><span class="t">        <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run"><span class="n"><a id="t4441" href="#t4441">4441</a></span><span class="t">            <span class="nam">print_red</span><span class="op">(</span><span class="str">f"&#9888; Cannot use {model_arg}. Available models are: {', '.join(available_models)}. Using BOTORCH_MODULAR instead."</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis"><span class="n"><a id="t4441" href="#t4441">4441</a></span><span class="t">            <span class="nam">print_red</span><span class="op">(</span><span class="str">f"&#9888; Cannot use {model_arg}. Available models are: {', '.join(available_models)}. Using BOTORCH_MODULAR instead."</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t4442" href="#t4442">4442</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t4443" href="#t4443">4443</a></span><span class="t">        <span class="key">if</span> <span class="nam">model_arg</span><span class="op">.</span><span class="nam">lower</span><span class="op">(</span><span class="op">)</span> <span class="op">!=</span> <span class="str">"factorial"</span> <span class="key">and</span> <span class="nam">args</span><span class="op">.</span><span class="nam">gridsearch</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t4444" href="#t4444">4444</a></span><span class="t">            <span class="nam">print_red</span><span class="op">(</span><span class="str">"Gridsearch only really works when you chose the FACTORIAL model."</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -4703,7 +4703,7 @@
     <p class="mis show_mis"><span class="n"><a id="t4621" href="#t4621">4621</a></span><span class="t">        <span class="nam">print_debug</span><span class="op">(</span><span class="str">"Cannot find nvidia-smi. Cannot take GPU logs"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t4622" href="#t4622">4622</a></span><span class="t">        <span class="key">return</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t4623" href="#t4623">4623</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p class="pln"><span class="n"><a id="t4624" href="#t4624">4624</a></span><span class="t">    <span class="key">while</span> <span class="key">True</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis"><span class="n"><a id="t4624" href="#t4624">4624</a></span><span class="t">    <span class="key">while</span> <span class="key">True</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t4625" href="#t4625">4625</a></span><span class="t">        <span class="key">try</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t4626" href="#t4626">4626</a></span><span class="t">            <span class="nam">host</span> <span class="op">=</span> <span class="nam">socket</span><span class="op">.</span><span class="nam">gethostname</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t4627" href="#t4627">4627</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -5452,8 +5452,8 @@
             <a class="nav" href="index.html">&Hat; index</a> &nbsp; &nbsp;
             <a class="nav" href="_omniopt_plot_cpu_ram_usage_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
-            <a class="nav" href="https://coverage.readthedocs.io/en/7.6.1">coverage.py v7.6.1</a>,
-            created at 2024-10-20 17:11 +0000
+            <a class="nav" href="https://coverage.readthedocs.io/en/7.6.3">coverage.py v7.6.3</a>,
+            created at 2024-10-20 17:16 +0000
         </p>
     </div>
 </footer>
