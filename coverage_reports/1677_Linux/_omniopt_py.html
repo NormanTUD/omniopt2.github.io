@@ -54,9 +54,9 @@
             </div>
         </aside>
         <h2>
-            <span class="text">3363 statements &nbsp;</span>
+            <span class="text">3364 statements &nbsp;</span>
             <button type="button" class="run button_toggle_run" value="run" data-shortcut="r" title="Toggle lines run">2504<span class="text"> run</span></button>
-            <button type="button" class="mis show_mis button_toggle_mis" value="mis" data-shortcut="m" title="Toggle lines missing">859<span class="text"> missing</span></button>
+            <button type="button" class="mis show_mis button_toggle_mis" value="mis" data-shortcut="m" title="Toggle lines missing">860<span class="text"> missing</span></button>
             <button type="button" class="exc show_exc button_toggle_exc" value="exc" data-shortcut="x" title="Toggle lines excluded">0<span class="text"> excluded</span></button>
         </h2>
         <p class="text">
@@ -64,8 +64,8 @@
             <a id="indexLink" class="nav" href="index.html">&Hat; index</a> &nbsp; &nbsp;
             <a id="nextFileLink" class="nav" href="_omniopt_plot_cpu_ram_usage_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
-            <a class="nav" href="https://coverage.readthedocs.io/en/7.6.1">coverage.py v7.6.1</a>,
-            created at 2024-10-20 16:43 +0000
+            <a class="nav" href="https://coverage.readthedocs.io/en/7.6.3">coverage.py v7.6.3</a>,
+            created at 2024-10-20 16:46 +0000
         </p>
         <aside class="hidden">
             <button type="button" class="button_next_chunk" data-shortcut="j"></button>
@@ -3678,7 +3678,7 @@
     <p class="run"><span class="n"><a id="t3596" href="#t3596">3596</a></span><span class="t">    <span class="key">for</span> <span class="nam">err</span> <span class="key">in</span> <span class="nam">get_base_errors</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3597" href="#t3597">3597</a></span><span class="t">        <span class="key">if</span> <span class="nam">isinstance</span><span class="op">(</span><span class="nam">err</span><span class="op">,</span> <span class="nam">list</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3598" href="#t3598">3598</a></span><span class="t">            <span class="key">if</span> <span class="nam">err</span><span class="op">[</span><span class="num">0</span><span class="op">]</span> <span class="key">in</span> <span class="nam">file_as_string</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t3599" href="#t3599">3599</a></span><span class="t">                <span class="nam">errors</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">f"{err[0]} {err[1]}"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t3599" href="#t3599">3599</a></span><span class="t">                <span class="nam">errors</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">f"{err[0]} {err[1]}"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3600" href="#t3600">3600</a></span><span class="t">        <span class="key">elif</span> <span class="nam">isinstance</span><span class="op">(</span><span class="nam">err</span><span class="op">,</span> <span class="nam">str</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3601" href="#t3601">3601</a></span><span class="t">            <span class="key">if</span> <span class="nam">err</span> <span class="key">in</span> <span class="nam">file_as_string</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3602" href="#t3602">3602</a></span><span class="t">                <span class="nam">errors</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">f"{err} detected"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -4520,7 +4520,7 @@
     <p class="run"><span class="n"><a id="t4438" href="#t4438">4438</a></span><span class="t">        <span class="key">if</span> <span class="nam">model_upper</span> <span class="key">in</span> <span class="nam">available_models</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t4439" href="#t4439">4439</a></span><span class="t">            <span class="nam">chosen_model</span> <span class="op">=</span> <span class="nam">Models</span><span class="op">.</span><span class="nam">__members__</span><span class="op">[</span><span class="nam">model_upper</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t4440" href="#t4440">4440</a></span><span class="t">        <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run"><span class="n"><a id="t4441" href="#t4441">4441</a></span><span class="t">            <span class="nam">print_red</span><span class="op">(</span><span class="str">f"&#9888; Cannot use {model_arg}. Available models are: {', '.join(available_models)}. Using BOTORCH_MODULAR instead."</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis"><span class="n"><a id="t4441" href="#t4441">4441</a></span><span class="t">            <span class="nam">print_red</span><span class="op">(</span><span class="str">f"&#9888; Cannot use {model_arg}. Available models are: {', '.join(available_models)}. Using BOTORCH_MODULAR instead."</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t4442" href="#t4442">4442</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t4443" href="#t4443">4443</a></span><span class="t">        <span class="key">if</span> <span class="nam">model_arg</span><span class="op">.</span><span class="nam">lower</span><span class="op">(</span><span class="op">)</span> <span class="op">!=</span> <span class="str">"factorial"</span> <span class="key">and</span> <span class="nam">args</span><span class="op">.</span><span class="nam">gridsearch</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t4444" href="#t4444">4444</a></span><span class="t">            <span class="nam">print_red</span><span class="op">(</span><span class="str">"Gridsearch only really works when you chose the FACTORIAL model."</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -4703,7 +4703,7 @@
     <p class="mis show_mis"><span class="n"><a id="t4621" href="#t4621">4621</a></span><span class="t">        <span class="nam">print_debug</span><span class="op">(</span><span class="str">"Cannot find nvidia-smi. Cannot take GPU logs"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t4622" href="#t4622">4622</a></span><span class="t">        <span class="key">return</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t4623" href="#t4623">4623</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p class="pln"><span class="n"><a id="t4624" href="#t4624">4624</a></span><span class="t">    <span class="key">while</span> <span class="key">True</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis"><span class="n"><a id="t4624" href="#t4624">4624</a></span><span class="t">    <span class="key">while</span> <span class="key">True</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t4625" href="#t4625">4625</a></span><span class="t">        <span class="key">try</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t4626" href="#t4626">4626</a></span><span class="t">            <span class="nam">host</span> <span class="op">=</span> <span class="nam">socket</span><span class="op">.</span><span class="nam">gethostname</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t4627" href="#t4627">4627</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -5452,8 +5452,8 @@
             <a class="nav" href="index.html">&Hat; index</a> &nbsp; &nbsp;
             <a class="nav" href="_omniopt_plot_cpu_ram_usage_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
-            <a class="nav" href="https://coverage.readthedocs.io/en/7.6.1">coverage.py v7.6.1</a>,
-            created at 2024-10-20 16:43 +0000
+            <a class="nav" href="https://coverage.readthedocs.io/en/7.6.3">coverage.py v7.6.3</a>,
+            created at 2024-10-20 16:46 +0000
         </p>
     </div>
 </footer>
